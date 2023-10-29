@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen-Portfolio✨</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- SCripts for contact email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('on_yYDE2QkWcxEoWb');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_36zu4za', 'template_r3bau5n', this)
+                    .then(function() {
+                      
+                        alert ('Your Message has been submited sucessfully....');
+                        document.getElementById('contact-form').reset();
+                    },
+                    function(error) {
+                      alert ('Something went wrong!Please try again later');
+                      document.getElementById('contact-form').reset();
+                    });
+                    
+            });
+        }
+    </script>
+
+
+    <!-- End of contact email script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body >
+
+  
+  
+
+<!-- Start of Navbar -->
+<nav class="navbar navbar-expand-md  navbar-expand-lg fixed-top" >
+  <div class="container-fluid">
+    <h1 class="navbar-brand  fs-2" style="color:lawngreen;">𝓝𝓪𝓿𝓮𝓮𝓷💚</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=" "> <img src="./Icons/icons8-three-dots-30.png" alt=""> </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+      <ul class="navbar-nav ms-auto  ">
+        <li class="nav-item me-1">
+          <a class="nav-link  fs-5 fw-medium " aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link  fs-5 fw-medium " href="#about">About</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link  fs-5 fw-medium " href="#Certifications">Certifications</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link  fs-5 fw-medium " href="#Projects">My Projects</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link  fs-5 fw-medium " href="#contactme">Contact Me</a>
+        </li>
+
+      </ul>
+      
+
+    </div>
+  </div>
+</nav>
+  <!-- End of navbar -->
+
+
+
+
+  <!-- Start of home -->
+  <div clas="container-fluid mt-5" id="home">
+    <div class="row  mt-5 ">
+
+      <div class="col-12 col-md-6 col-lg-6 mt-4  ">
+        <span class="hello ms-3  fw-bolder  " >Hello  <img src="./Icons/hi.png" class="hiimg" width="40px" height="40px"></span>
+        <h1 class="iam ms-3"> <span id="iam2">I'm </span><span class="multiText"></span> </h1>
+        <h1 class="hello ms-3 " style="color:lawngreen;">Let Me Introduce Myself✌🏻</h1>
+        <ul >
+            <li > <p class=" ms-3 me-3">⭐I fell in love with programming and I have at least learnt something....</p></li>
+            <li > <p class=" ms-3 me-3">⭐I am fluent in classics like C, Javascript and Python.</p></li>
+            <li > <p class=" ms-3 me-3">⭐My field of Interest's are building new  BlockChain, Web Technologies and Products and also in areas related to Mobile Application Development.</p></li>
+            <li > <p class=" ms-3 me-3">⭐Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks  like React.js and Next.js</p></li>
+            <li class="ms-5 ">
+            <a class="me-3" href="https://github.com/Naveen-Gn" target="_blank"><img src="./Icons/github.png" height="35px"></a>
+            <a class="me-3" href="https://www.linkedin.com/in/naveen-g-281356253" target="_blank"><img src="./Icons/317725_linkedin_social_icon.png" height="30px"></a>
+            <a class="me-3" href="https://twitter.com/Naveen12gn" target="_blank" ><img src="./Icons/logo-twitter-png-47450.png" height="30px"></a>
+            <a class="me-3" href="https://www.instagram.com/_.n.a.ve.e.n._/" target="_blank"><img src="./Icons/3225191_app_instagram_logo_media_popular_icon.png" alt="" height="35px"></a>
+            <a class="me-3" href="https://www.facebook.com/profile.php?id=100022489606274" target="_blank"><img src="./Icons/5296499_fb_facebook_facebook logo_icon.png" height="35px"></a>
+        </li>
+          
+        </ul>
+                  <div class="btns ms-5 "><button id="downloadButton" class="ms-5 rounded-1" style="font-family: 'Merienda', cursive;text-transform: uppercase;">download my CV</button></div>
+              </div>
+
+              
+              <div class=" col-12 col-md-6 col-lg-6 mt-sm-4  mt-md-5 mt-lg-5    "> 
+
+                <div class="d-flex justify-content-center mt-lg-5">
+
+                  <img src="./Images/portfolio.png" >
+                </div>
+                  <!-- <div class="card mx-auto  mt-lg-5 mt-md-5 ms-md-auto  rounded-circle" style="width: 18rem; background-color: rgba(255,255,255,0.1); box-shadow: 0 2px 4px 0 rgba(0,0,0,.5); backdrop-filter: blur(10px); ">
+                    <img src="." class="card-img-top rounded-5" style="border: 3px solid lawngreen;">
+                    <div class="">
+                    </div>
+                  </div> -->
+                
+                
+                        </div>
+
+      </div>
+
+        
+      
+    </div>
+
+<!-- End of home -->
+
+<!-- Start of about page -->
+
+<div clas="container-fluid mt-3" id="about">
+  <div class="row " >
+
+    <div class="col-12 col-md-12 col-lg-7   ">
+      <h1 class="hello text-center mb-4  " style="color:lawngreen;">Know Who I'M</h1>
+       
+            <ul class="">
+                <li><p class="  mt-3 me-md-3 me-sm-3 me-3 ">⭐I am Naveen, and I am from Cuddalore, Tamil Nadu, India.</p></li>
+                <li><p class="  mt-3 me-md-3 me-sm-3 me-3 ">⭐I am pursuing B.E in Computer Science Engineering at Jaya Engineering College.</p></li>
+                <li><p class="  mt-3 me-md-3 me-sm-3 me-3 ">⭐My strengths are being an honest person, a quick learner, and a self-motivated person.</p></li>
+                <li><p class="  mt-3 me-md-3 me-sm-3 me-3 ">⭐My short-term goal is to get a job at a reputed company.</p></li>
+                <li><p class="  mt-3 me-md-3 me-sm-3 me-3 ">⭐My long-term goal is to get a high position in reputed company, where I can start my career and help the organization too.</p></li>
+            </ul>
+</div>
+
+            
+    <div class=" col-12 col-md-12 col-lg-5  "> 
+              
+      <h1 class="hello  ms-2  text-center mb-4 " style="color: lawngreen;">Apart from coding, I love to do!</h1>
+      <div class="d-flex justify-content-center">
+      <div style="width: 200px; ">
+      <ul >
+        <li><p>⭐Playing Games</p></li>
+        <li><p>⭐Watching Movies</p></li>
+        <li><p>⭐Travelling </p></li>
+        <li><p> ⭐Drawing</p></li>
+        <li><p>⭐listening to music</p></li>
+                </ul>
+      </div>
+    </div>
+
+
+    </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid "><h1 class="hello text-center mt-4 mb-3 " style="color: lawngreen;transition-delay: 100ms; ">Professional Skills</h1></div>
+<div class="container-fluid ">
+  
+  <div class="row " >
+    
+    <div id="test" class="d-flex justify-content-center align-items-center flex-wrap">
+
+    
+    
+    
+      <div class="container1   ">
+      <div class="card ">
+             <img src="./Icons/python.png"  class="h-75 w-75  mx-auto my-auto mx-auto">
+      </div>
+    </div>
+  
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/icons8-c-programming-96.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/java.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+   
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/html.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/css-3.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+    
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/java-script.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+    
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/node-js.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+    
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/science.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+   
+      <div class="container1  ">
+        <div class="card">
+            <img src="./Icons/mangodb.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+</div>
+
+
+
+<div class="container-fluid "><h1 class="hello text-center mt-4 mb-3 " style="color: lawngreen; ">Tools I Use</h1>
+</div>
+
+<div class="container-fluid ">
+  
+  <div class="row " >
+    
+    <div class="d-flex justify-content-center align-items-center flex-wrap">
+
+      <div class="container1   ">
+      <div class="card ">
+             <img src="./Icons/windows.png"  class="h-75 w-75 my-auto mx-auto">
+      </div>
+    </div>
+  
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/linux.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+   
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/code.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/git.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+    
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/bootstrap.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+    
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/office.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+    
+      <div class="container1  ">
+        <div class="card">
+               <img src="./Icons/Vs.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+   
+      <div class="container1  ">
+        <div class="card">
+            <img src="./Icons/figma.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+
+      <div class="container1  ">
+        <div class="card">
+            <img src="./Icons/canva.png" class="h-75 w-75 my-auto mx-auto">
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<!-- End of About page -->
+
+
+<!-- Start of Certifications Page -->
+
+<div class="container-fluid " id="Certifications">
+  <div class="row ">
+    <div class="col-12  "><h1 class="hello text-center  mb-4 " style="color: lawngreen;">My Certifications</h1></div>
+    
+    <div class="cer-container ">
+      <div class="image-container">
+
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/ICT Academy-open weaver-virtual internship.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Naanmudhalvan-AIML.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Naanmudhalvan 1.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Naanmudhalvan 2.jpg" alt="" height="300px" width="400px"> </div>
+        
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Naanmudhalvan 3.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Microsoft Asure.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/MongoDB Basics.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Cisco-cybersecurity.jpg" alt="" height="300px" width="400px"> </div>
+        
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Hackerrank-python.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Devtown-Netflix clone.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Coursera-python.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Coursera-Figma.jpg" alt="" height="300px" width="400px"> </div>
+        
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Sololearn-Cprogram.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Sololearn-HTML.jpg" alt="" height="300px" width="400px"> </div>
+        <div class="certificate  " style="transition-delay: 1000ms;"><img src="./Certificates & Resume/Sololearn-python.jpg" alt="" height="300px" width="400px"> </div>
+    
+
+      </div>
+<div class="popup-image">
+  <span>&times;</span>
+  <img src="./Images/Introduction to C_certificate.jpg" alt="" height="500px" width="700px">
+  <div class="d-flex justify-content-center ">
+    <button class="btn-primary rounded-3" id="imgdownloadButton">Download</button>
+  </div>
+
+</div>
+  </div>
+  </div>
+</div>
+
+<!-- End of Certifications Page -->
+
+<!-- start of project page -->
+
+<div class="row Projects" id="Projects"><h1 class="hello text-center mt-5 " style="color: lawngreen; z-index: 100;">My Projects</h1></div>
+<div class="container-fluid mt-3">
+
+  <div class="row ">
+    
+    <div class=" d-flex justify-content-center flex-wrap">
+
+    <div class="   m-3" >
+      <div class="card " style="width: 18rem; background-color: rgba(255,255,255,0.1); box-shadow: 0 2px 4px 0 rgba(0,0,0,.5); backdrop-filter: blur(10px);">
+        <img src="./Images/portfolio.png" class="card-img-top" >
+          <h5 class="text-center " style="color: lawngreen;font-family: 'Merienda', cursive;">My Portfolio</h5>
+          <button type="button" class="btn ps-4 pe-4 d-grid justify-content-center ms-auto me-auto" style="background-color: lawngreen; "><a href="https://github.com/Naveen-gn/My-portfolio" style="text-decoration: none; color: white; background-color: lawngreen;" target="_blank">View</a></button>
+      </div>
+    </div>
+    
+    <div class="   m-3" >
+      <div class="card  " style="width: 18rem; background-color: rgba(255,255,255,0.1); box-shadow: 0 2px 4px 0 rgba(0,0,0,.5); backdrop-filter: blur(10px);">
+        <img src="./Images/resume.png" class="card-img-top" >
+          <h5 class="text-center" style="color: lawngreen;font-family: 'Merienda', cursive;">Resume Generator</h5>
+          <button type="button" class="btn ps-4 pe-4 d-grid justify-content-center ms-auto me-auto" style="background-color: lawngreen; "><a href="https://github.com/Naveen-gn/My-projects/tree/main/Resume%20Generator" style="text-decoration: none; color: white; background-color: lawngreen;" target="_blank">View</a></button>
+      </div>
+    </div>
+    
+    <div class="   m-3" >
+      <div class="card " style="width: 18rem; background-color: rgba(255,255,255,0.1); box-shadow: 0 2px 4px 0 rgba(0,0,0,.5); backdrop-filter: blur(10px);">
+        <img src="./Images/Crowdfunding.png" class="card-img-top" >
+          <h5 class="text-center" style="color: lawngreen;font-family: 'Merienda', cursive;">Crowdfunding-DApp</h5>
+          <button type="button" class="btn ps-4 pe-4 d-grid justify-content-center ms-auto me-auto" style="background-color: lawngreen; "><a href="https://github.com/Naveen-gn/Crowdfunding_dapp" style="text-decoration: none; color: white; background-color: lawngreen;" target="_blank">View</a></button>
+      </div>
+    </div>
+
+    <div class="   m-3" >
+      <div class="card" style="width: 18rem; background-color: rgba(255,255,255,0.1); box-shadow: 0 2px 4px 0 rgba(0,0,0,.5); backdrop-filter: blur(10px);">
+        <img src="./Images/calculator-3671700-3061901.webp" class="card-img-top " >
+          <h5 class="text-center" style="color: lawngreen;font-family: 'Merienda', cursive;">Calculator</h5>
+          <button type="button" class="btn ps-4 pe-4 d-grid justify-content-center ms-auto me-auto" style="background-color: lawngreen; "><a href="https://github.com/Naveen-gn/Calculator" style="text-decoration: none; color: white; background-color: lawngreen;" target="_blank">View</a></button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  </div>
+</div>
+
+<!-- end of project page -->
+<!-- Start of contact page -->
+
+<section id="contactme" class="  mt-5">
+  <div class="container5">
+      <div class="form">
+          <h2>Contact Me</h2>
+          <form id="contact-form" action="">
+            <input type="hidden" name="contact_number">
+              <div class="inputBx">
+                  <input type="text" name="user_name" placeholder="Name">
+              </div>
+              <div class="inputBx">
+                  <input type="email" name="user_mail" placeholder="Email">
+              </div>
+              <div class="inputBx">
+                  <textarea name="message" id="" placeholder="Your Messages..."></textarea>
+              </div>
+              <div class="inputBx">
+                  <input type="submit" value="Send" class="">
+              </div>
+              <p class="text">Or contact me on....</p>
+              <li class="ms-3 ">
+                <a class="me-3" href="https://github.com/Naveen-Gn" target="_blank"><img src="./Icons/github.png" height="35px"></a>
+                <a class="me-3" href="https://www.linkedin.com/in/naveen-g-281356253" target="_blank"><img src="./Icons/317725_linkedin_social_icon.png" height="30px"></a>
+                <a class="me-3" href="https://twitter.com/Naveen12gn" target="_blank" ><img src="./Icons/logo-twitter-png-47450.png" height="30px"></a>
+                <a class="me-3" href="https://www.instagram.com/_.n.a.ve.e.n._/" target="_blank"><img src="./Icons/3225191_app_instagram_logo_media_popular_icon.png" alt="" height="35px"></a>
+                <a class="me-3" href="https://www.facebook.com/profile.php?id=100022489606274" target="_blank"><img src="./Icons/5296499_fb_facebook_facebook logo_icon.png" height="35px"></a>
+            </li>
+              
+          </form> 
+
+        
+
+      </div>
+  </div>
+</div>
+</section>
+<!-- end of contact page -->
+
+
+<!-- Javascript for Multitext -->
+<script>
+    var typingEffect = new Typed(".multiText",{
+        strings :["Naveen.","Coder.","Student.","Developer.","Creator."],
+        loop:true,
+        typeSpeed:100,
+        backSpeed:80,
+        backD25ay:250
+    });
+</script>
+<!-- End of multitext -->
+
+<!-- JS for tilt effect -->
+<script type="text/javascript" src="./vanilla-tilt.js"></script>
+<script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+</script>
+<!-- end of tilt effect -->
+
+<!-- Script for download CV -->
+<script>
+  document.getElementById('downloadButton').addEventListener('click', function() {
+      var pdfUrl = './Certificates & Resume/My-Resume.pdf';
+      var a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = pdfUrl;
+      a.download = 'Naveen-Resume.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+  });
+</script>
+<!-- End of Download script -->
+
+<!-- Script for Certificate cards -->
+<script>
+  document.querySelectorAll('.image-container img').forEach(image=>{
+      image.onclick=()=>{
+      document.querySelector('.popup-image').style.display='block'
+      document.querySelector('.Projects').style.display='none'
+      document.querySelector('.popup-image img').src=image.getAttribute('src');
+  }
+  });
+
+  document.querySelector('.popup-image span').onclick=()=>{
+      document.querySelector('.popup-image').style.display='none'
+      document.querySelector('.Projects').style.display='flex'
+      
+  }
+
+ 
+
+</script>
+<!-- end of certificate cards -->
+
+
+<script src="./script.js"></script>
+</body>
+</html>
