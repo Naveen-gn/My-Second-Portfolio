@@ -93,7 +93,10 @@ nav{
       font-family: 'Merienda', cursive;
   }
 
-
+.navbar-toggler{
+        background-color: white;
+  
+}
   button{
       outline: none;
       border: none;
